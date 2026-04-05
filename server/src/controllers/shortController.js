@@ -1,4 +1,4 @@
-const Url = require("../models/Url");
+const Url = require("../models/url.model");
 const validator = require("validator");
 
 const generateShortCode = () => {
