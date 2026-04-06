@@ -7,14 +7,13 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://url-shortener-frontend-1ei3ni4ip-aadityas-projects-205f54df.vercel.app",
+  "https://url-shortener-frontend-phi-murex.vercel.app",
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      // allow requests with no origin (Postman, curl, server-to-server)
-      if (!origin) return callback(null, true);
+      if (!origin) return callback(null, true); // allow Postman / direct browser requests
 
       if (allowedOrigins.includes(origin)) {
         return callback(null, true);
