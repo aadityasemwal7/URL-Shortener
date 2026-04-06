@@ -7,7 +7,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://url-shortener-frontend-phi-murex.vercel.app",
+  "https://url-shortener-frontend-bwidwl0zi-aadityas-projects-205f54df.vercel.app",
 ];
 
 app.use(
